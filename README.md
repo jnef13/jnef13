@@ -11,14 +11,7 @@ I'm Jonathan (username jnef13), and I'm an aspiring software engineer who specia
 
 ## About Myself
 
-I'm a Singaporean, and I generally do whatever I'm interested in. This can include learning a new language, a new JavaScript framework or static site generator, or making a Minecraft Mod (Yeah, I play Minecraft).
-
-My skillset includes:
-
-- Knowledge of several programming languages such as JavaScript, python, Java, and Rust.
-- Great knowledge on static site generation.
-- Knowledge of JavaScript frameworks such as Svelte (my beloved), Vue, React, and Astro.
-- This list will be updated as my skillset grows.
+I'm a Singaporean, and I generally do whatever I'm interested in. This can include learning a new language, a new JavaScript framework or static site generator, or making a Minecraft Mod (Yeah, I play Minecraft). 
 
 ## GitHub Stats
 
