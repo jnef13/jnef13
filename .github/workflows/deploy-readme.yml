@@ -1,0 +1,37 @@
+name: Deploy automatically generated GitHub README
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '55 */1 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Clone the repository locally
+        uses: actions/checkout@v4
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: '23.5.0'
+      - name: Install PNPM
+        uses: pnpm/action-setup@v4
+        with:
+          version: '10'
+      - name: Improve build times through caching.
+        uses: actions/cache@v4
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-js-${{ hashFiles('pnpm-lock.yasml') }}
+      - name: Install project dependencies
+        run: pnpm install
+      - name: Generate the README file
+        run: pnpm run build
+      - name: Commit and Push new README.md to the repository
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
