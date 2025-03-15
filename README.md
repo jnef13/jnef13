@@ -31,8 +31,4 @@ Yes, I know they're pretty bad but this is a new account, so I'm basically start
   <img height=200 align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=jnef13&layout=compact&langs_count=8&card_width=320" />
 </a>
 
-## My Projects
-
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=anuraghazra&repo=github-readme-stats)](https://github.com/anuraghazra/github-readme-stats)
-
 *This README file is automatically generated, and has been last updated at Saturday 15 March at 11:35 GMT+8*
